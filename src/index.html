@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <title>Tomás Euliarte</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+		
+		
+      
+
+</head>
+<body>
+  <app-root></app-root>
+  <script>
+    function cambiarParrafo(){
+      document.getElementById("edit-acercade").style.display="block";
+      let texto = document.getElementById("textAboutme").style.innerText;
+      consol.log(texto);
+    }
+    function submit(valor){
+      document.getElementById("textAboutme").innerText=valor;
+      
+    }
+  </script>
+</body>
+</html>

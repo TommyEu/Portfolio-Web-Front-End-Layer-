@@ -15,6 +15,9 @@ section article h1, section article p, section article img{
 nav{
 	position:relative;
 }
+.social{
+    margin-right: 4px;
+}
 #login{
 	  width: 80px;
 	  height: 30px;
@@ -23,7 +26,7 @@ nav{
   	  position: absolute;
   	  top:2px;
 	  right: 20px;
-	  padding-bottom: 5px;
+	  padding-bottom: 7px;
 	  
 	 transition: color 0.3s ease;
     color: #ffff;
@@ -73,7 +76,7 @@ header{
   margin-left: 10px;
   margin-right: 10px;
   padding: 1px;
-  border-radius: 10px;
+  border-radius: 20px;
  
   overflow: hidden;
   
@@ -114,7 +117,7 @@ header{
 	
 	position: relative;
 	display: block;
-	bottom: 60px;
+	bottom: 85px;
 	margin-left: 20px;
 	
 	
@@ -132,7 +135,7 @@ header{
   background-color: #ffff;
   margin: 1rem 0;
   padding: 0.4rem 0;
-  border-radius: 0.5rem;
+  border-radius: 20px;
   border: 0px solid black;
   margin-left: 10px;
   margin-right: 10px;
@@ -147,16 +150,16 @@ article div{
 	margin-top: 60px;
 	margin-bottom: 120px;
 }
+div p{
+    display: inline-block;
+    width: 60%;
+    
+}
 .eduLogo{
 	float: left;
 
 }
-.eduinfo{
-	position: absolute;
-	width: 100px;
-	display: inline-block;
-	
-}
+
 
 
 #about{
@@ -170,7 +173,12 @@ article div{
 }
 
 
-
+#edit-acercade{
+	position:relative;
+	margin: 5px;
+	bottom: 20px;
+	left: 20px;
+}
 
 
 
@@ -191,7 +199,7 @@ article div{
     display: block;
 	width: 100px;
 	height: 100px;
-	top: -50px;
+	top: -110px;
 	right: 20px;
 }
 .botonera img{
@@ -205,8 +213,9 @@ article div{
 	
 }
 .delete{
-	
-	top: 30px; left: 70px;
+	display: block;
+	top: 65px; left: 30px;
+    position: relative;
 }
 .edit img{
 	width: 15px;
