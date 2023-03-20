@@ -19,13 +19,13 @@
 <body>
   <app-root></app-root>
   <script>
-    function cambiarParrafo(){
-      document.getElementById("edit-acercade").style.display="block";
-      let texto = document.getElementById("textAboutme").style.innerText;
-      consol.log(texto);
+    function cambiarParrafo(editInput, text){
+      document.getElementById(editInput).style.display="block";
+      let texto = document.getElementById(text).style.innerText;
+      console.log(texto);
     }
-    function submit(valor){
-      document.getElementById("textAboutme").innerText=valor;
+    function submit(valor, text){
+      document.getElementById(text).innerText=valor;
       
     }
   </script>

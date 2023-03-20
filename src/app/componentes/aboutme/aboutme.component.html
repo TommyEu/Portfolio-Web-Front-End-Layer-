@@ -1,8 +1,18 @@
+<header>			
+  <img id="portada" [src]='persona.coverImg'>
+  <img id="perfil" [src]="persona.img">			
+  <div id="profileInfo">				
+    <h2>{{persona.name}}</h2>
+    <p>{{persona.title}}</p>
+    <p>{{persona.ubication}}</p>
+    <a href="" id="editarPerfil" class="edit"><img src="./assets/lapiz.png" width="20px" height="20px"></a>
+  </div>
+</header>
+
 <article id="about">
     <h1>Acerca de</h1>
-    <p id="textAboutme">Técnico en electrónica, estudiante de desarrollo web fullstack en Córdoba, Argentina.</p>
-      <a href="#about" onclick="cambiarParrafo()" class="edit"><img src="./assets/lapiz.png" width="20px" height="20px"></a>
+    <p id="textAboutme">{{persona.info}}</p>
+      <a href="#about" onclick="cambiarParrafo('edit_acercade', 'textAboutme')" class="edit"><img src="./assets/lapiz.png" width="20px" height="20px"></a>
     
-    <input type="text" oninput="submit(this.value)" id="edit-acercade" style="display:none">
-      
+    <input type="text" oninput="submit(this.value, 'textAboutme')" id="edit_acercade" style="display:none">
   </article>
