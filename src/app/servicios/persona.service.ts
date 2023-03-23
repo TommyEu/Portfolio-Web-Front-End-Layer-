@@ -12,6 +12,7 @@ export class PersonaService {
 
    }
    public traerInfo(): Observable<Persona>{
+    console.log(Persona);
     return this.http.get<Persona>(this.URL + '/traer/1');
    }
 }
