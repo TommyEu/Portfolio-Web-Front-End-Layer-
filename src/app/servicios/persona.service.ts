@@ -7,12 +7,11 @@ import { Persona } from '../model/model/Persona.model';
   providedIn: 'root'
 })
 export class PersonaService {
-  URL:string = "https://myblog-tommyeu.koyeb.app";
+  URL:string = "https://portfolio-web-backend-layer.myblog.koyeb/";
   constructor(private http: HttpClient) {
 
    }
    public traerInfo(): Observable<Persona>{
-    console.log(Persona);
-    return this.http.get<Persona>(this.URL + '/traer/1');
+    return this.http.get<Persona>(this.URL + 'traer/1');
    }
 }
