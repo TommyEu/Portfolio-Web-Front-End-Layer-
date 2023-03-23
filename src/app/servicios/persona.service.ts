@@ -7,7 +7,7 @@ import { Persona } from '../model/model/Persona.model';
   providedIn: 'root'
 })
 export class PersonaService {
-  URL:string = "myblog-tommyeu.koyeb.app:8000";
+  URL:string = "myblog-tommyeu.koyeb.app";
   constructor(private http: HttpClient) {
 
    }
