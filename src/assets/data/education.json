@@ -1,0 +1,27 @@
+[
+  {
+  "ideducation": 1,
+  "name": "IPP San Roque",
+  "career": "Técnico en electrónica",
+  "initialDate": 2015,
+  "finalDate": 2021,
+  "img": "https://ippsanroque.com.ar/wp-content/uploads/2021/03/cropped-IPPSR-1.png"
+  },
+
+  {
+    "ideducation": 2,
+    "name": "Argentina Programa",
+    "career": "Técnico en electrónica",
+    "initialDate": 2021,
+    "finalDate": 2022,
+    "img": "https://i.imgur.com/v8j95CT.png"
+  },
+  {
+    "ideducation": 3,
+    "name": "Platzi",
+    "career": "Ruta de Backend con Java, Ruta de Angular",
+    "initialDate": 2022,
+    "finalDate": 2023,
+    "img": "https://i.imgur.com/93qAnTX.png"
+  }
+]
