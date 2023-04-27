@@ -12,6 +12,6 @@ export class PersonaService {
 
    }
    public traerInfo(): Observable<Persona>{
-    return this.http.get<Persona>(this.URL + 'traer/1');
+    return this.http.get<Persona>(this.URL + '/acercade/traer/1');
    }
 }
