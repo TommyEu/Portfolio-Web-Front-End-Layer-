@@ -10,7 +10,7 @@ import { EducationComponent } from '../componentes/education/education.component
 })
 export class PersonaService {
   
-  Url:string = 'https://myblog-tommyeu.koyeb.app/' + 'acercade/';
+  Url:string = environment.URL + 'acercade/';
   constructor(private http: HttpClient) {
 
    }

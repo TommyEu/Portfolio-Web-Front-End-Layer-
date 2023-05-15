@@ -9,7 +9,7 @@ import { Educacion } from '../model/model/Educacion.model';
   providedIn: 'root'
 })
 export class EducacionService {
-  URL:string = environment.URL + "educacion/";
+  URL:string = environment.URL + 'educacion/';
   constructor(private http: HttpClient) { }
       obtenerDatos(): Observable<any>{
         return this.http.get(this.URL + 'traer/lista-education');
