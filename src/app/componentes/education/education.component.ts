@@ -18,16 +18,7 @@ export class EducationComponent implements OnInit {
     });
   } 
 
-  onAdd(){
-    this.datosEducacion.crearDatos(this.miEducacion).subscribe(data => {
-      alert("Educacion añadida correctamente");
-      this.router.navigate(['']);
-    }, err =>
-    {
-      alert('falló');
-      this.router.navigate(['']);
-    } )
-  }
+  
 
 
 }
