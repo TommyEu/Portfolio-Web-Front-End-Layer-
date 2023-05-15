@@ -10,14 +10,14 @@ import { EducationComponent } from '../componentes/education/education.component
 })
 export class PersonaService {
   
-  URL:string = environment.URL + "acercade/";
+  Url:string = 'https://myblog-tommyeu.koyeb.app/' + 'acercade/';
   constructor(private http: HttpClient) {
 
    }
    public traerInfo(): Observable<Persona>{
-    return this.http.get<Persona>(this.URL + 'traer/1');
+    return this.http.get<Persona>(this.Url + 'traer/1');
    }
    public modificarInfo(id: number, persona: Persona): Observable<Persona>{
-    return this.http.put<any>(this.URL + `editar/${id}`, persona);
+    return this.http.put<any>(this.Url + `editar/${id}`, persona);
    }
 }
