@@ -1,0 +1,26 @@
+article{
+    background-color: #ffff;
+    margin: 1rem 0;
+    padding: 0.4rem 0;
+    border-radius: 20px;
+    border: 0px solid black;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+    
+  }
+
+  header{
+    background-color: #ffff;
+    height: 550px;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 1px;
+    padding-bottom: 30px;
+    border-radius: 20px;
+   
+    overflow: hidden;
+    
+  
+  }

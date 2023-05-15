@@ -14,5 +14,5 @@ export class AboutmeComponent implements OnInit {
   ngOnInit(): void {
     this.personaService.traerInfo().subscribe(data => {this.persona = data});
   }
-
+  
 }

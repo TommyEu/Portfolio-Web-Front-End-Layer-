@@ -126,12 +126,15 @@ header{
 }
 
 #editarPerfil{
-	position: absolute;
-	right: 30px;
-	top: 6%;
+	margin-top: -200px;
+	margin-left: 95%;
 	display: block;
 }
 
+#textAboutme{
+	display: inline-block;
+	width: 60%;
+}
 
  article{
   background-color: #ffff;
