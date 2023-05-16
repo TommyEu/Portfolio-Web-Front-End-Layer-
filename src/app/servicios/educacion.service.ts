@@ -11,8 +11,11 @@ import { Educacion } from '../model/model/Educacion.model';
 export class EducacionService {
   URL:string = environment.URL + 'educacion/';
   constructor(private http: HttpClient) { }
-      obtenerDatos(): Observable<any>{
-        return this.http.get(this.URL + 'traer/lista-education');
+      obtenerDatos(): Observable<Educacion[]>{
+        return this.http.get<Educacion[]>(this.URL + 'traer/lista-education');
+      }
+      traerPorId(id:number): Observable<Educacion>{
+        return this.http.get<Educacion>(this.URL + `traer/${id}`);
       }
       editarDatos(id:number, educacion:Educacion): Observable<any>{
         return this.http.put(this.URL + `edit/${id}`, educacion);

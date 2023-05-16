@@ -16,6 +16,7 @@ import { EditaboutmeComponent } from './componentes/aboutme/editaboutme/editabou
 import { HomeComponent } from './componentes/home/home.component';
 import { NeweducationComponent } from './componentes/education/neweducation/neweducation.component';
 import { EditeducationComponent } from './componentes/education/editeducation/editeducation.component';//importar cliente http de angular
+import { ROUTES, RouterModule, Routes } from '@angular/router';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +37,8 @@ import { EditeducationComponent } from './componentes/education/editeducation/ed
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    RouterModule,    
   ],
   providers: [],
   bootstrap: [AppComponent]

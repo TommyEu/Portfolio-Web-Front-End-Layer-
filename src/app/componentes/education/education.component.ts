@@ -9,7 +9,7 @@ import { EducacionService } from 'src/app/servicios/educacion.service';
   styleUrls: ['./education.component.css']
 })
 export class EducationComponent implements OnInit {    
-    miEducacion:any
+    miEducacion: Educacion[] = [];
     constructor(private datosEducacion:EducacionService, private router:Router) { }
 
   ngOnInit(): void {
