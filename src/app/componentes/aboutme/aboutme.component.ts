@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Persona } from 'src/app/model/model/Persona.model';
+import { Persona } from 'src/app/model/Persona.model';
 import { PersonaService } from 'src/app/servicios/persona.service';
 
 @Component({
@@ -13,7 +13,6 @@ export class AboutmeComponent implements OnInit {
 
   ngOnInit(): void {
     this.personaService.traerInfo().subscribe(data => {this.persona = data});
-    alert("Persona " + this.persona.idacerca_de);
   }
   
 }

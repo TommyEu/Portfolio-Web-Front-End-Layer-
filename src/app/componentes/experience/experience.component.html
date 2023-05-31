@@ -1,20 +1,45 @@
 <article>
-    <h1>Experiencia</h1>
+    <h2>Experiencia</h2>
+    <a *ngIf="miExp" routerLink="new-exp" class="add">
+      <img src="./assets/mas.png" width="20px" height="20px"
+    /></a>
+  <!-- 
     <div>
       <img class="eduLogo" src="" width="100px" height="100px">
       <div class="info">
         <h2>Mi situación laboral</h2>
-        <p>Actualmente no poseo experiencia profesional
-      dentro del mundo IT, ni en un empleo en
-       cualquier otro ámbito. Pero hoy en día colaboro con el
-      negocio de mi familia. Que posee un pequeño comercio de
-       cercanía, donde </p>		
+        <p>Mi experiencia es a partir de esta página web creada con Angular
+           que consume una API creada por mí utilizando la tecnología de Java Spring Boot.
+            Esta API provee los datos que ahora aparecen en pantalla.
+             ¡Incluído este post! Este proyecto es la prueba visible de
+              mis habilidades técnicas y de mi experiencia en las tecnologías mencionadas arriba</p>		
       </div>
       <div class="botonera">
         <a href="" class="delete"><img src=".\assets\eliminar.png" width="20px" height="20px"></a>
         <a href="" class="edit"><img src="./assets/lapiz.png" width="20px" height="20px"></a>
         <a href="" class="add"> <img src="./assets/mas.png" width="20px" height="20px"></a>
       </div>							
-    </div>
+    </div> -->
     
+  <div *ngFor="let exp of miExp">
+    <img class="eduLogo" [src]="exp.img" width="100px" height="100px" />
+    <div class="info">
+      <h2>{{ exp.enterprise}}</h2>
+      <p>{{ exp.title }}</p>
+      <p>{{exp.description}}</p>
+      <p>{{ exp.initialDate }} - {{ exp.finalDate }}</p>
+    </div>
+    <div class="botonera">
+      <a (click)="onDelete(exp.id)" class="delete"
+        ><img src=".\assets\eliminar.png" width="20px" height="20px"
+      /></a>
+      <a href="/edit-exp/{{exp.id}}" class="edit"
+        ><img src="./assets/lapiz.png" width="20px" height="20px"
+      /></a>
+      <a href="new-exp" class="add">
+        <img src="./assets/mas.png" width="20px" height="20px"
+      /></a>
+    </div>
+    <hr />
+  </div>
   </article>

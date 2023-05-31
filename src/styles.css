@@ -4,13 +4,13 @@ html {
 	font-family: 'Noto Sans', 'Montserrat', sans-serif;
 }
 body {
-	display:flex;
+
 	margin: 0;
 	
 	background-color: #fff;  
 }
 
-section article h1, section article p, section article img{
+section article h2, section article p, section article img{
 	margin: 1.5rem;
 }
 nav{

@@ -1,6 +1,6 @@
 <article id="education">
-  <h1>Educación</h1>
-  <a href="new-education" class="add">
+  <h2>Educación</h2>
+  <a *ngIf="miEducacion" routerLink="new-education" class="add">
     <img src="./assets/mas.png" width="20px" height="20px"
   /></a>
   <div *ngFor="let educacion of miEducacion">
@@ -12,12 +12,12 @@
     </div>
 
     <div class="botonera">
-      <a href="" class="delete"
+      <a (click)="onDelete(educacion.idEducation)" class="delete"
         ><img src=".\assets\eliminar.png" width="20px" height="20px"
       /></a>
-      <button routerLink="/edit-education/{{educacion.id}}" class="edit"
+      <a href="/edit-education/{{educacion.idEducation}}" class="edit"
         ><img src="./assets/lapiz.png" width="20px" height="20px"
-      /></button>
+      /></a>
       <a href="new-education" class="add">
         <img src="./assets/mas.png" width="20px" height="20px"
       /></a>

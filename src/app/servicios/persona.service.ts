@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Persona } from '../model/model/Persona.model';
+import { Persona } from '../model/Persona.model';
 import { environment } from 'src/environments/environment';
 import { EducationComponent } from '../componentes/education/education.component';
 
